@@ -1,0 +1,337 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fitsSystemWindows="true"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="3dp"
+                android:layout_marginBottom="12dp"
+                android:background="#303F9F" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+
+                <RadioGroup
+                    android:id="@+id/radiogroup"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="left"
+                        android:layout_marginTop="10dp"
+                        android:gravity="start"
+                        android:text="坐标转换方式"
+                        android:textSize="20sp" />
+
+                    <RadioButton
+                        android:id="@+id/radioButton1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:checked="true"
+                        android:text="大地BLH->直角XYZ" />
+
+                    <RadioButton
+                        android:id="@+id/radioButton2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="直角XYZ->大地BLH" />
+
+                    <RadioButton
+                        android:id="@+id/radioButton3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="大地BLH->高斯xyH" />
+
+                    <RadioButton
+                        android:id="@+id/radioButton4"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="高斯xyH->大地BLH" />
+                </RadioGroup>
+
+                <RadioGroup
+                    android:id="@+id/zuobiao_rg_fendai"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="left"
+                        android:gravity="start"
+                        android:text="分带选择"
+                        android:textSize="20sp" />
+
+                    <RadioButton
+                        android:id="@+id/zuobiao_3dudai"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:checked="true"
+                        android:text="3度带"
+                        android:textSize="20sp" />
+
+                    <RadioButton
+                        android:id="@+id/zuobiao_6dudai"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:text="6度带"
+                        android:textSize="20sp" />
+
+                </RadioGroup>
+
+                <RadioGroup
+                    android:id="@+id/zuobiao_rg_tuoqiu"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginBottom="10dp">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="left"
+                        android:gravity="start"
+                        android:text="坐标系"
+                        android:textSize="20sp" />
+
+                    <RadioButton
+                        android:id="@+id/zuobiao_Krassovsky"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:checked="true"
+                        android:text="Krassovsky"
+                        android:textSize="20sp" />
+
+                    <RadioButton
+                        android:id="@+id/zuobiao_ICGG1975"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:text="ICGG1975"
+                        android:textSize="20sp" />
+
+                    <RadioButton
+                        android:id="@+id/zuobiao_WGS_84"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:text="WGS84"
+                        android:textSize="20sp" />
+
+                    <RadioButton
+                        android:id="@+id/zuobiao_CGCS2000"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:text="CGCS2000"
+                        android:textSize="20sp" />
+
+                </RadioGroup>
+
+            </LinearLayout>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="3dp"
+                android:layout_marginBottom="12dp"
+                android:background="#303F9F" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <RelativeLayout
+                    android:id="@+id/zuobiao_rl1"
+                    android:layout_width="164dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp">
+
+                    <TextView
+                        android:id="@+id/zuobiao_t1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="大地坐标"
+                        android:textSize="20sp"
+                        android:inputType="number"/>
+
+                    <EditText
+                        android:id="@+id/zuobiao_ed11"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/zuobiao_t1"
+                        android:layout_marginTop="10dp"
+                        android:digits="1234567890."
+                        android:ems="10"
+                        android:hint="B(dms)"
+                        android:inputType="number"
+                        android:maxLines="1"
+                        android:paddingTop="3dp"
+                        android:paddingBottom="3dp"
+                        android:singleLine="true"
+                        android:textSize="20sp" />
+
+                    <EditText
+                        android:id="@+id/zuobiao_ed21"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/zuobiao_ed11"
+                        android:layout_marginTop="10dp"
+                        android:digits="1234567890."
+                        android:ems="10"
+                        android:hint="L(dms)"
+                        android:inputType="number"
+                        android:maxLines="1"
+                        android:paddingTop="3dp"
+                        android:paddingBottom="3dp"
+                        android:singleLine="true"
+                        android:textSize="20sp" />
+
+                    <EditText
+                        android:id="@+id/zuobiao_ed31"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/zuobiao_ed21"
+                        android:layout_marginTop="10dp"
+                        android:digits="1234567890."
+                        android:ems="10"
+                        android:hint="H(m)"
+                        android:inputType="number"
+                        android:maxLines="1"
+                        android:paddingTop="3dp"
+                        android:paddingBottom="3dp"
+                        android:singleLine="true"
+                        android:textSize="20sp" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/zuobiao_rl2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp">
+
+                    <TextView
+                        android:id="@+id/zuobiao_t2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="空间直角坐标"
+                        android:textSize="20sp" />
+
+                    <EditText
+                        android:id="@+id/zuobiao_ed12"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/zuobiao_t2"
+                        android:layout_marginTop="10dp"
+                        android:digits="1234567890."
+                        android:ems="10"
+                        android:hint="X(m)"
+                        android:inputType="number"
+                        android:maxLines="1"
+                        android:paddingTop="3dp"
+                        android:paddingBottom="3dp"
+                        android:singleLine="true"
+                        android:textSize="20sp" />
+
+                    <EditText
+                        android:id="@+id/zuobiao_ed22"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/zuobiao_ed12"
+                        android:layout_marginTop="10dp"
+                        android:digits="1234567890."
+                        android:ems="10"
+                        android:hint="Y(m)"
+                        android:maxLines="1"
+                        android:paddingTop="3dp"
+                        android:paddingBottom="3dp"
+                        android:singleLine="true"
+                        android:textSize="20sp"
+                        android:inputType="number"/>
+
+                    <EditText
+                        android:id="@+id/zuobiao_ed32"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/zuobiao_ed22"
+                        android:layout_marginTop="10dp"
+                        android:digits="1234567890."
+                        android:ems="10"
+                        android:hint="Z(m)"
+                        android:maxLines="1"
+                        android:paddingTop="3dp"
+                        android:paddingBottom="3dp"
+                        android:singleLine="true"
+                        android:textSize="20sp"
+                        android:inputType="number"/>
+                </RelativeLayout>
+
+            </LinearLayout>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="3dp"
+                android:layout_marginBottom="12dp"
+                android:background="#303F9F" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/button_delete"
+                    style="@style/Widget.Material3.Button.ElevatedButton"
+                    android:layout_width="0sp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_margin="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="30dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginBottom="20dp"
+                    android:text="清除"
+                    android:textSize="30sp" />
+
+                <Button
+                    android:id="@+id/button_start"
+                    style="@style/Widget.Material3.Button.ElevatedButton"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_margin="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="30dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginBottom="20dp"
+                    android:text="计算"
+                    android:textSize="30sp" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+</FrameLayout>

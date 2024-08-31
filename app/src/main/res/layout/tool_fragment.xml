@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".main.toolFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+        <Button
+            android:id="@+id/button_levelcheck"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:gravity="left|center_vertical"
+            android:onClick="levelcheck_Activity"
+            android:text="水准校验"
+            android:textSize="20sp"
+            style="@style/Widget.Material3.Button.ElevatedButton"/>
+
+        <androidx.constraintlayout.widget.Barrier
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:barrierDirection="left" />
+
+
+        <Button
+            android:id="@+id/button_getCoordinates"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:gravity="left|center_vertical"
+            android:lineSpacingExtra="20sp"
+            android:onClick="getCoordinates_Activity"
+            android:text="获取平面坐标"
+            android:textAlignment="viewStart"
+            android:textAllCaps="false"
+            android:textSize="20sp"
+            tools:ignore="RtlCompat"
+            style="@style/Widget.Material3.Button.ElevatedButton"/>
+
+
+
+        <androidx.constraintlayout.widget.Barrier
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:barrierDirection="left" />
+
+        <Button
+            android:id="@+id/button_coordinateTransformation"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:gravity="left|center_vertical"
+            android:onClick="coordinatetransformation_Activity"
+            android:text="坐标转换"
+            android:textSize="20sp"
+            style="@style/Widget.Material3.Button.ElevatedButton"/>
+
+        <androidx.constraintlayout.widget.Barrier
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:barrierDirection="left" />
+
+        <Button
+            android:id="@+id/button_DMSConversion"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:gravity="left|center_vertical"
+            android:onClick="dmsconvert_Activity"
+            android:text="度分秒转换"
+            android:textSize="20sp"
+            style="@style/Widget.Material3.Button.ElevatedButton"/>
+
+        <androidx.constraintlayout.widget.Barrier
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:barrierDirection="left" />
+
+        <Button
+            android:id="@+id/button_azimuthCalculation"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:gravity="left|center_vertical"
+            android:onClick="azimuthcalculation_Activity"
+            android:text="方位角计算"
+            android:textSize="20sp"
+            style="@style/Widget.Material3.Button.ElevatedButton"/>
+
+        <androidx.constraintlayout.widget.Barrier
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:barrierDirection="left" />
+
+        <Button
+            android:id="@+id/button_coordinateCalculation"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_gravity="left"
+            android:layout_weight="1"
+            android:gravity="left|center_vertical"
+            android:onClick="coordinatecalculation_Activity"
+            android:text="坐标正反算"
+            android:textSize="20sp"
+            style="@style/Widget.Material3.Button.ElevatedButton"/>
+
+        <androidx.constraintlayout.widget.Barrier
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#3F51B5"
+            app:barrierDirection="left" />
+
+
+
+        <Button
+            android:id="@+id/button_angleCalculation"
+            style="@style/Widget.Material3.Button.ElevatedButton"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:gravity="left|center_vertical"
+            android:onClick="angleCalculation_Activity"
+            android:text="角度计算"
+            android:textSize="20sp" />
+
+        <androidx.constraintlayout.widget.Barrier
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:barrierDirection="left" />
+
+        <TextView
+            android:id="@+id/textView16"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:layout_weight="1"
+            android:textSize="34sp" />
+
+        <androidx.constraintlayout.widget.Barrier
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:barrierDirection="left" />
+
+        <TextView
+            android:id="@+id/textView17"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:layout_weight="1"
+
+            android:textSize="34sp" />
+
+        <androidx.constraintlayout.widget.Barrier
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:barrierDirection="left" />
+
+        <TextView
+            android:id="@+id/textView18"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:layout_weight="1"
+
+            android:textSize="34sp" />
+
+        <androidx.constraintlayout.widget.Barrier
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:barrierDirection="left" />
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:layout_weight="1"
+
+            android:textSize="34sp" />
+
+        <androidx.constraintlayout.widget.Barrier
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:barrierDirection="left" />
+
+        <TextView
+            android:id="@+id/textView20"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:layout_weight="1"
+
+            android:textSize="34sp" />
+
+
+
+    </LinearLayout>
+</FrameLayout>

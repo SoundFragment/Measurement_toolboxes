@@ -1,0 +1,430 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <!-- 三等水准（光学）/后前前后 -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="三等水准（光学）/后前前后"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="16dp"/>
+
+    <!-- 第一站 -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <!-- 站名 -->
+
+        <TextView
+            android:id="@+id/stationTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="第 1 站"
+            android:textSize="16sp"
+            android:textStyle="bold"/>
+
+        <!-- 后视点 -->
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@android:color/black" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="8dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="后视点:"
+                android:textSize="16sp"/>
+
+            <EditText
+                android:id="@+id/backNameET"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:hint="点名"
+                android:text=""/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="前视点:"
+                android:textSize="16sp" />
+
+            <EditText
+                android:id="@+id/frontNameET"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:hint="点名"
+                android:text="TP1"/>
+
+
+
+        </LinearLayout>
+
+        <!-- 前视点 -->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="8dp"
+            android:gravity="center">
+
+            <!-- 校验按钮 -->
+            <Button
+                android:id="@+id/validateButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="校验"/>
+
+            <!-- 重测按钮 -->
+            <Button
+                android:id="@+id/retestButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="清除"/>
+
+            <!-- 搬站按钮 -->
+            <Button
+                android:id="@+id/moveStationButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="搬站"/>
+            <!-- 查看按钮 -->
+            <Button
+                android:id="@+id/viewButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="查看"
+                android:onClick="DataPresenterActivity"/>
+
+            <!-- 平差按钮 -->
+            <Button
+                android:id="@+id/adjustmentButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:minWidth="48dp"
+                android:text="平差"
+                android:onClick="AdjustedDataActivity"/>
+
+        </LinearLayout>
+    </LinearLayout>
+
+
+    <!-- 上、下丝读数表格 -->
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@android:color/black" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <!-- 左侧列 -->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <!-- 标题 -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="上、下丝读数"
+                android:textAlignment="center"
+                android:textStyle="bold" />
+
+            <!-- 左侧表格内容 -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <!-- 第一行 -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <EditText
+                        android:id="@+id/backTopET1"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:hint="1后尺上丝dm"
+                        android:inputType="number"
+                        android:text=""/>
+
+                    <EditText
+                        android:id="@+id/frontTopET5"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:hint="5前尺上丝dm"
+                        android:inputType="number"
+                        android:text=""/>
+                </LinearLayout>
+
+                <!-- 第二行 -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <EditText
+                        android:id="@+id/backBottomET2"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:hint="2后尺下丝dm"
+                        android:inputType="number"
+                        android:text=""/>
+
+                    <EditText
+                        android:id="@+id/frontBottomET6"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:hint="6前尺下丝dm"
+                        android:inputType="number"
+                        android:text=""/>
+                </LinearLayout>
+
+                <!-- 第三行 -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <EditText
+                        android:id="@+id/backSightET"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:hint="后视距m"
+                        android:clickable="false"
+                        android:focusable="false"/>
+
+                    <EditText
+                        android:id="@+id/frontSightET"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:hint="前视距m"
+                        android:clickable="false"
+                        android:focusable="false"/>
+                </LinearLayout>
+
+                <!-- 第四行 -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <EditText
+                        android:id="@+id/sightDiffET"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:hint="视距差m"
+                        android:clickable="false"
+                        android:focusable="false"/>
+
+                    <EditText
+                        android:id="@+id/cumulativeSightDiffET"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:hint="累计视距差m"
+                        android:clickable="false"
+                        android:focusable="false"/>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+        <!-- 右侧列 -->
+    </LinearLayout>
+
+    <!-- 分隔线 -->
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@android:color/black" />
+
+    <!-- 中丝读数表格 -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <!-- 左侧列 -->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <!-- 标题 -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="中丝读数"
+                android:textAlignment="center"
+                android:textStyle="bold" />
+
+            <!-- 左侧表格内容 -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <!-- 第一行 -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <EditText
+                        android:id="@+id/backBlackMidET3"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:hint="3后黑中丝dm"
+                        android:inputType="number"
+                        android:text=""/>
+
+                    <EditText
+                        android:id="@+id/backRedMidET8"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:hint="8后红中丝dm"
+                        android:inputType="number"
+                        android:text=""/>
+
+                    <EditText
+                        android:id="@+id/backBlackPlusKMinusRedET"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:clickable="false"
+                        android:focusable="false"
+                        android:hint="后黑+K-后红" />
+                </LinearLayout>
+
+                <!-- 第二行 -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <EditText
+                        android:id="@+id/frontBlackMidET4"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:hint="4前黑中丝dm"
+                        android:inputType="number"
+                        android:text=""/>
+
+                    <EditText
+                        android:id="@+id/frontRedMidET7"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:hint="7前红中丝dm"
+                        android:inputType="number"
+                        android:text=""/>
+
+                    <EditText
+                        android:id="@+id/frontBlackPlusKMinusRedET"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:clickable="false"
+                        android:focusable="false"
+                        android:hint="前黑+K-前红" />
+                </LinearLayout>
+
+                <!-- 第三行 -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <EditText
+                        android:id="@+id/blackHeightDiffET"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:hint="黑面高差dm"
+                        android:clickable="false"
+                        android:focusable="false"/>
+
+                    <EditText
+                        android:id="@+id/redHeightDiffET"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:hint="红面高差dm"
+                        android:clickable="false"
+                        android:focusable="false"/>
+
+                    <EditText
+                        android:id="@+id/blackMinusRedHeightDiffET"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:hint="K"
+                        android:clickable="false"
+                        android:focusable="false"/>
+                </LinearLayout>
+
+                <!-- 第四行 -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <EditText
+                        android:id="@+id/averageTV"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:hint="黑红面高差中数mm"
+                        android:clickable="false"
+                        android:focusable="false"
+                        android:gravity="center"/>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+        <!-- 右侧列 -->
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/validationPromptTV"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="" />
+
+</LinearLayout>

@@ -1,0 +1,25 @@
+<resources>
+    <string name="app_name">测绘工具箱</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_navigation">navigation_Activity</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+
+    <string name="hello_first_fragment">Hello first fragment</string>
+    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+
+
+
+    <string name="copyright">版权所有 (c) 2024，刘学良</string>
+    <string name="gpl_license">本软件基于GNU通用公共许可证（GPL）发布。根据GPL的条款，您被授权免费使用、修改和分发本软件。</string>
+    <string name="open_source_license">开源许可：\n在本许可下，您可以自由地使用、复制、修改和分发本软件的源代码或二进制文件，无论用途为何。您还可以基于本软件开发派生作品，并将其以GPL许可协议分发。在分发时，您必须包含原始许可和版权声明，并保留本软件中包含的任何其他开源许可协议。</string>
+    <string name="commercial_license">商业许可：\n如果您希望将本软件用于商业目的，并在商业环境中使用或分发本软件，您需要获得商业许可。商业许可授予您在商业环境中使用本软件的权利，并提供额外的商业支持、定制功能和优先更新等服务。</string>
+    <string name="non_commercial_use">非商业使用：\n对于个人和非商业用户，您可以继续免费使用本软件，遵守GPL许可协议的要求。</string>
+    <string name="about2">软件名称：测量工具箱\n\n版权所有 (c) 2024，刘学良\n\n开源地址：\n\n本软件基于GNU通用公共许可证（GPL）发布。根据GPL的条款，您被授权免费使用、修改和分发本软件。\n\n开源许可：\n在本许可下，您可以自由地使用、复制、修改和分发本软件的源代码或二进制文件，无论用途为何。您还可以基于本软件开发派生作品，并将其以GPL许可协议分发。在分发时，您必须包含原始许可和版权声明，并保留本软件中包含的任何其他开源许可协议。\n\n商业许可：\n如果您希望将本软件用于商业目的，并在商业环境中使用或分发本软件，您需要获得商业许可。商业许可授予您在商业环境中使用本软件的权利，并提供额外的商业支持、定制功能和优先更新等服务。\n\n非商业使用：\n对于个人和非商业用户，您可以继续免费使用本软件，遵守GPL许可协议的要求。\n\n具体的商业许可费用和条款将在商业许可协议中明确规定。如果您有任何关于商业许可的疑问或需要获取详细的商业许可信息，请联系以下地址。\n\n[您的联系信息]</string>
+    <string name="about">软件名称：测量工具箱\n软件版本：0.6\n开源地址：</string>
+
+</resources>

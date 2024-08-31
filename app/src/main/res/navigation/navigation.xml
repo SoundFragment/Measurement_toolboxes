@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation_all">
+
+    <fragment
+        android:id="@+id/aboutFragment"
+        android:label="关于"
+        tools:layout="@layout/about_fragment" />
+    <fragment
+        android:id="@+id/applicationFragment"
+
+        android:label="应用"
+        tools:layout="@layout/application_fragment" />
+
+    <fragment
+        android:id="@+id/toolFragment"
+
+        android:label="工具"
+        tools:layout="@layout/tool_fragment">
+        <action
+            android:id="@+id/action_toolFragment_to_dmsconvert_Fragment"
+            />
+        <action
+            android:id="@+id/action_toolFragment_to_anglecalculation_Fragment" />
+        <action
+            android:id="@+id/action_toolFragment_to_levelcheck_Fragment"
+            />
+        <action
+            android:id="@+id/action_toolFragment_to_azimuthcalculation_Fragment"
+            />
+        <action
+            android:id="@+id/action_toolFragment_to_coordinatecalculation_Fragment"
+            />
+        <action
+            android:id="@+id/action_toolFragment_to_coordinatetransformation_Fragment"
+            />
+        <action
+            android:id="@+id/action_toolFragment_to_getCoordinates_Fragment"
+            />
+    </fragment>
+    <fragment
+        android:id="@+id/dmsconvert_Fragment"
+
+        android:label="度分秒转换"
+        tools:layout="@layout/tool_dmsconvert" />
+    <fragment
+        android:id="@+id/anglecalculation_Fragment"
+
+        android:label="角度计算"
+        tools:layout="@layout/tool_anglecalculation" />
+    <fragment
+        android:id="@+id/azimuthcalculation_Fragment"
+
+        android:label="方位角计算"
+        tools:layout="@layout/tool_azimuthcalculation" />
+    <fragment
+        android:id="@+id/coordinatecalculation_Fragment"
+
+        android:label="坐标正反算"
+        tools:layout="@layout/tool_coordinatecalculation" />
+    <fragment
+        android:id="@+id/coordinatetransformation_Fragment"
+
+        android:label="tool_coordinatetransformation"
+        tools:layout="@layout/tool_coordinatetransformation" />
+    <fragment
+        android:id="@+id/levelcheck_Fragment"
+
+        android:label="水准校验"
+        tools:layout="@layout/tool_levelcheck" />
+    <fragment
+        android:id="@+id/getCoordinates_Fragment"
+        android:label="tool_getcoordinates"
+        tools:layout="@layout/tool_getcoordinates" />
+</navigation>

@@ -1,0 +1,89 @@
+
+plugins {
+    id 'com.android.application'
+}
+
+
+
+
+android {
+    namespace "com.liuxueliang.measurementtoolboxes"
+    compileSdk 34
+
+    defaultConfig {
+        applicationId "com.liuxueliang.measurementtoolboxes"
+        minSdk 24
+
+        versionCode 1
+        versionName "1.0"
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+        targetSdkVersion compileSdk
+
+        //地图相关
+
+
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+    buildToolsVersion '34.0.0'
+    compileSdk 34
+    buildFeatures {
+        viewBinding true
+        buildConfig = true
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+
+
+    configurations.all {
+        resolutionStrategy { force 'androidx.core:core:1.8.0' }
+
+    }
+
+    packagingOptions {
+        resources {
+//            //merge 'META-INF/LICENSE.md'
+//            exclude 'META-INF/LICENSE-notice.md'
+            excludes += "/META-INF/{AL2.0,LGPL2.1}"
+            merges += "META-INF/LICENSE.md"
+            merges += "META-INF/LICENSE-notice.md"
+        }
+
+    }
+}
+
+
+dependencies {
+
+
+    implementation 'androidx.appcompat:appcompat:1.6.1'
+    implementation 'com.google.android.material:material:1.11.0'
+    implementation 'androidx.legacy:legacy-support-v4:1.0.0'
+    implementation 'androidx.lifecycle:lifecycle-livedata-ktx:2.7.0'
+    implementation 'androidx.lifecycle:lifecycle-viewmodel-ktx:2.7.0'
+
+    implementation 'androidx.work:work-runtime:2.9.0'
+
+    implementation 'androidx.constraintlayout:constraintlayout:2.1.4'
+    androidTestImplementation 'androidx.test.ext:junit:1.1.5'
+
+    implementation 'androidx.compose.material3:material3:1.2.1'
+    implementation 'androidx.navigation:navigation-runtime:2.7.7'
+    androidTestImplementation 'junit:junit:4.13.2'
+    androidTestImplementation 'org.junit.jupiter:junit-jupiter:5.10.2'
+
+    //美化一下
+    
+
+
+
+
+}

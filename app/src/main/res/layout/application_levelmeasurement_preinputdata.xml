@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="请选择、输入数据，并准备开始水准测量。"
+        android:gravity="center"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_marginTop="20dp"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="3dp"
+        android:background="@android:color/darker_gray" />
+
+
+
+    <RadioGroup
+        android:id="@+id/levelRG"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="16dp">
+
+        <!-- 一等水准等级 -->
+        <RadioButton
+            android:id="@+id/firstLevelRB"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="一等水准"
+            android:textSize="16sp"
+            android:clickable="false"
+            android:focusable="false"/>
+
+        <!-- 二等水准等级 -->
+        <RadioButton
+            android:id="@+id/secondLevelRB"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="二等水准"
+            android:textSize="16sp"
+            android:clickable="false"
+            android:focusable="false"/>
+
+        <!-- 三等水准等级 -->
+        <RadioButton
+            android:id="@+id/thirdLevelRB"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="三等水准"
+            android:textSize="16sp"
+            android:checked="true"/>
+
+        <!-- 四等水准等级 -->
+        <RadioButton
+            android:id="@+id/fourthLevelRB"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="四等水准"
+            android:textSize="16sp"
+            android:clickable="false"
+            android:focusable="false"/>
+    </RadioGroup>
+
+    <!-- 水准路线选择 -->
+    <RadioGroup
+        android:id="@+id/routeRG"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="16dp">
+
+        <!-- 闭合水准路线 -->
+        <RadioButton
+            android:id="@+id/closedLevelRouteRB"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="闭合水准路线"
+            android:textSize="16sp"
+            android:checked="true"/>
+
+        <!-- 附合水准路线 -->
+        <RadioButton
+            android:id="@+id/attachedLevelRouteRB"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="附合水准路线"
+            android:textSize="16sp" />
+
+        <!-- 支水准路线 -->
+        <RadioButton
+            android:id="@+id/branchLevelRouteRB"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="支水准路线"
+            android:textSize="16sp" />
+    </RadioGroup>
+
+    <!-- 地形类型选择 -->
+    <RadioGroup
+        android:id="@+id/terrainRG"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="16dp">
+
+        <!-- 山地 -->
+        <RadioButton
+            android:id="@+id/mountainRB"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="山区"
+            android:textSize="16sp"
+            android:checked="true"/>
+
+        <!-- 平地 -->
+        <RadioButton
+            android:id="@+id/plainRB"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="平原"
+            android:textSize="16sp" />
+    </RadioGroup>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="3dp"
+        android:background="@android:color/darker_gray" />
+
+    <!-- 输入已知起点高程 -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="16dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="已知起点高程:"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/startElevationET"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:hint="单位m"
+            android:inputType="numberDecimal" />
+    </LinearLayout>
+
+    <!-- 输入已知终点高程 -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="16dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="已知终点高程:"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/endElevationET"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:hint="单位m"
+            android:inputType="numberDecimal" />
+    </LinearLayout>
+
+    <!-- 输入记录者 -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="16dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="记录者:"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/recorderET"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:hint="请输入记录者姓名"
+            android:inputType="text" />
+    </LinearLayout>
+
+    <!-- 开始和查看按钮 -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/startButton"
+            android:layout_width="0dp"
+            android:layout_height="53dp"
+            android:layout_weight="1"
+            android:onClick="StartRecordingActivity"
+            android:text="开始"
+            android:textSize="16sp" />
+
+        <Button
+            android:id="@+id/viewButton"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="查看" />
+    </LinearLayout>
+</LinearLayout>

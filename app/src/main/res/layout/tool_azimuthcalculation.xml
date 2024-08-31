@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_fangweijiao"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:fitsSystemWindows="true">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:id="@+id/linearLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            tools:layout_editor_absoluteX="0dp"
+            tools:layout_editor_absoluteY="51dp">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="3dp"
+                android:layout_marginBottom="12dp"
+                android:background="#303F9F"
+                tools:ignore="Suspicious0dp" />
+
+            <EditText
+                android:id="@+id/fangweijiao_qi_X"
+                android:layout_width="match_parent"
+                android:layout_height="60sp"
+                android:digits="1234567890.-"
+                android:ems="10"
+                android:hint="起点X坐标"
+                android:inputType="number"
+                android:maxLines="1"
+                android:minHeight="48dp"
+                android:paddingLeft="10dp"
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp"
+                android:singleLine="true"
+                android:textSize="25sp"
+                android:gravity="center"
+                tools:ignore="MissingConstraints" />
+
+            <EditText
+                android:id="@+id/fangweijiao_qi_Y"
+                android:layout_width="match_parent"
+                android:layout_height="60sp"
+                android:layout_marginBottom="12dp"
+                android:digits="1234567890.-"
+                android:ems="10"
+                android:hint="起点Y坐标"
+                android:inputType="number"
+                android:maxLines="1"
+                android:minHeight="48dp"
+                android:paddingLeft="10dp"
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp"
+                android:singleLine="true"
+                android:textSize="25sp"
+                android:gravity="center"/>
+
+            <EditText
+                android:id="@+id/fangweijiao_zhong_X"
+                android:layout_width="match_parent"
+                android:layout_height="60sp"
+                android:layout_marginBottom="12dp"
+                android:digits="1234567890.-"
+                android:ems="10"
+                android:hint="终点X坐标"
+                android:inputType="number"
+                android:maxLines="1"
+                android:minHeight="48dp"
+                android:paddingLeft="10dp"
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp"
+                android:singleLine="true"
+                android:textSize="25sp"
+                android:gravity="center"/>
+
+            <EditText
+                android:id="@+id/fangweijiao_zhong_Y"
+                android:layout_width="match_parent"
+                android:layout_height="60sp"
+                android:layout_marginBottom="12dp"
+                android:digits="1234567890.-"
+                android:ems="10"
+                android:hint="终点Y坐标"
+                android:inputType="number"
+                android:maxLines="1"
+                android:minHeight="48dp"
+                android:paddingLeft="10dp"
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp"
+                android:singleLine="true"
+                android:textSize="25sp"
+                tools:ignore="MissingConstraints"
+                android:gravity="center"/>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="3dp"
+                android:background="#303F9F"
+                tools:ignore="Suspicious0dp" />
+
+            <EditText
+                android:id="@+id/fangweijiao_result"
+                android:layout_width="match_parent"
+                android:layout_height="120dp"
+                android:digits="1234567890.-"
+                android:ems="10"
+                android:gravity="center"
+                android:hint="计算结果"
+                android:inputType="number"
+                android:maxLines="1"
+                android:padding="5dp"
+                android:singleLine="false"
+                android:textSize="30sp"
+                tools:ignore="MissingConstraints" />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="3dp"
+                android:background="#303F9F"
+                tools:ignore="Suspicious0dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:layout_marginBottom="30dp">
+
+                <Button
+                    android:id="@+id/fangweijiao_button_delete"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="清除"
+                    android:textSize="30sp"
+                    android:layout_marginTop="30dp"
+                    style="@style/Widget.Material3.Button.ElevatedButton"/>
+
+                <Button
+                    android:id="@+id/fangweijiao_button"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="计算"
+                    android:textSize="30sp"
+                    android:layout_marginTop="30dp"
+                    tools:ignore="MissingConstraints"
+                    style="@style/Widget.Material3.Button.ElevatedButton"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</RelativeLayout>
+
+
+
+
+
+
+
+

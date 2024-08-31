@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="10dp">
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:layout_marginBottom="10dp">
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="选择导线正、反算"
+            android:textAllCaps="true"
+            android:textStyle="bold|italic"
+            android:gravity="center"
+            android:layout_marginTop="10dp"
+            android:textSize="30sp"/>
+
+        <RadioGroup
+            android:id="@+id/radiogroup"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="10dp">
+
+            <RadioButton
+                android:id="@+id/radioButton_forward"
+                android:layout_width="220dp"
+                android:layout_height="wrap_content"
+                android:checked="true"
+                android:text="导线坐标正算"
+                android:layout_marginRight="10dp" />
+
+            <RadioButton
+                android:id="@+id/radioButton_inverse"
+                android:layout_width="191dp"
+                android:layout_height="wrap_content"
+                android:text="导线坐标反算" />
+
+        </RadioGroup>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="3dp"
+            android:background="#303F9F" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:layout_marginTop="10dp">
+
+            <LinearLayout
+                android:id="@+id/zuobiaozheng_l1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:layout_marginTop="10dp">
+
+                <EditText
+                    android:id="@+id/XA"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:digits="1234567890.-"
+                    android:ems="10"
+                    android:hint="起点X坐标"
+                    android:inputType="number"
+                    android:maxLines="1"
+                    android:paddingLeft="10dp"
+                    android:paddingTop="5dp"
+                    android:paddingBottom="5dp"
+                    android:singleLine="true"
+                    android:textSize="25sp"
+                    android:gravity="center" />
+
+                <EditText
+                    android:id="@+id/YA"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:digits="1234567890.-"
+                    android:ems="10"
+                    android:hint="起点Y坐标"
+                    android:inputType="number"
+                    android:maxLines="1"
+                    android:paddingLeft="10dp"
+                    android:paddingTop="5dp"
+                    android:paddingBottom="5dp"
+                    android:singleLine="true"
+                    android:textSize="25sp"
+                    android:gravity="center" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/l2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:layout_marginTop="10dp">
+
+                <EditText
+                    android:id="@+id/fangweijiao"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:digits="1234567890.-"
+                    android:ems="10"
+                    android:hint="方位角(d.ms)"
+                    android:inputType="number"
+                    android:maxLines="1"
+                    android:singleLine="true"
+                    android:textSize="25sp"
+                    android:gravity="center" />
+
+                <EditText
+                    android:id="@+id/juli"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:digits="1234567890.-"
+                    android:ems="10"
+                    android:hint="距离(m)"
+                    android:inputType="number"
+                    android:maxLines="1"
+                    android:singleLine="true"
+                    android:textSize="25sp"
+                    android:gravity="center" />
+
+            </LinearLayout>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="3dp"
+                android:background="#303F9F" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/YB"
+        android:layout_width="match_parent"
+        android:layout_height="65dp"
+        android:gravity="center"
+        android:hint="终点Y坐标"
+        android:inputType="number"
+        android:maxLines="1"
+        android:padding="5dp"
+        android:singleLine="true"
+        android:textSize="30sp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp" />
+
+    <EditText
+        android:id="@+id/XB"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:digits="1234567890.-"
+        android:ems="10"
+        android:gravity="center"
+        android:hint="终点X坐标"
+        android:inputType="number"
+        android:maxLines="1"
+        android:singleLine="true"
+        android:textSize="30sp"
+        android:layout_marginBottom="10dp" />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="3dp"
+        android:background="#303F9F"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_marginBottom="10dp">
+
+        <Button
+            android:id="@+id/button_delete"
+            style="@style/Widget.Material3.Button.ElevatedButton"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="清除"
+            android:textSize="30dp" />
+
+        <Button
+            android:id="@+id/button"
+            style="@style/Widget.Material3.Button.ElevatedButton"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="计算"
+            android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+            android:textSize="30dp" />
+    </LinearLayout>
+</LinearLayout>
